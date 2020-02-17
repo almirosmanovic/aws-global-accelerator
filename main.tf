@@ -1,3 +1,8 @@
+provider "aws" {
+  region = "eu-west-1"
+}
+
+
 resource "aws_globalaccelerator_accelerator" "this" {
   name            = var.name
   ip_address_type = "IPV4"

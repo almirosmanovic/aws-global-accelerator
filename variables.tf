@@ -1,11 +1,11 @@
 variable "name" {
   type    = string
-  default = ""
+  
 }
 
 variable "add_route53_record" {
   type    = bool
-  default = true
+  default = false
 }
 
 variable "route53_zone_id" {
@@ -22,7 +22,7 @@ variable "route53_record_name" {
 
 variable "add_elb_listener" {
   type        = bool
-  default     = true
+  default     = false
   description = "Whether to add var.elb_endpoint to global accelerator endpoints"
 }
 
